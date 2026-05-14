@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Довідник CSS | Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Довідник CSS</h1>
+        <p>Від базових селекторів до професійної верстки</p>
+    </header>
+    <div class="layout">
+        <aside>
+            <div class="sidebar-nav">
+                <h3>Зміст проєкту</h3>
+                <ul>
+                    <li><a href="index.html" class="active">🏠 Головна сторінка</a></li>
+                    <li><a href="text.html">✍️ Текст та шрифти</a></li>
+                    <li><a href="blocks.html">📦 Блоки та межі</a></li>
+                    <li><a href="flexbox.html">🧩 Flexbox та макети</a></li>
+                    <li><a href="examples.html">🚀 Практичні кейси</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <h2>Ласкаво просимо у світ стилів</h2>
+            <p><strong>CSS (Cascading Style Sheets)</strong> — це мова, яка перетворює сухий HTML-документ на привабливий веб-інтерфейс. Без CSS інтернет виглядав би як звичайна газета.</p>
+            
+            <div class="info-card">
+                <h3>Чому це важливо?</h3>
+                <p>CSS дозволяє відокремити зміст сторінки від її оформлення. Це означає, що ви можете змінити весь дизайн сайту, відредагувавши лише один файл стилів.</p>
+            </div>
+
+            <h3>Три способи підключення:</h3>
+            <ol>
+                <li><strong>Зовнішній файл:</strong> Найкращий спосіб (використовуємо тут).</li>
+                <li><strong>Внутрішні стилі:</strong> Тег <code>&lt;style&gt;</code> у "голові" документа.</li>
+                <li><strong>Inline-стилі:</strong> Атрибут <code>style="..."</code> прямо у тегу (не рекомендується).</li>
+            </ol>
+
+            <div class="code-window">
+                <div class="code-header"><span>index.html</span><span>HTML</span></div>
+                <pre>&lt;<span class="keyword">link</span> <span class="prop">rel</span>=<span class="val">"stylesheet"</span> <span class="prop">href</span>=<span class="val">"style.css"</span>&gt;</pre>
+            </div>
+        </main>
+    </div>
+    <footer><p>&copy; 2026 Проєктна діяльність. Всі права захищено.</p></footer>
+</body>
+</html>

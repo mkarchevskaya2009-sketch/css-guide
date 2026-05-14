@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Текст та шрифти | CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Дизайн типографіки</h1>
+        <p>Як зробити контент читабельним та естетичним</p>
+    </header>
+    <div class="layout">
+        <aside>
+            <div class="sidebar-nav">
+                <h3>Зміст</h3>
+                <ul>
+                    <li><a href="index.html">🏠 Головна сторінка</a></li>
+                    <li><a href="text.html" class="active">✍️ Текст та шрифти</a></li>
+                    <li><a href="blocks.html">📦 Блоки та межі</a></li>
+                    <li><a href="flexbox.html">🧩 Flexbox та макети</a></li>
+                    <li><a href="examples.html">🚀 Практичні кейси</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <h2>Робота з текстом</h2>
+            <p>Текст — це 90% веб-інтерфейсу. CSS надає безмежні можливості для його оформлення.</p>
+
+            <h3>1. font-size (Розмір)</h3>
+            <p>Можна вказувати в <code>px</code> (фіксовано) або <code>rem</code> (адаптивно). Професіонали обирають <code>rem</code>.</p>
+
+            <h3>2. font-family (Шрифти)</h3>
+            <p>Дозволяє вибрати шрифт. Завжди вказуйте запасні варіанти на випадок, якщо основний шрифт не завантажиться.</p>
+
+            <div class="code-window">
+                <div class="code-header"><span>Шрифти</span><span>CSS</span></div>
+                <pre><span class="sel">p</span> {
+  <span class="prop">font-family</span>: <span class="val">'Inter', Arial, sans-serif</span>;
+  <span class="prop">font-size</span>: <span class="val">1.1rem</span>;
+  <span class="prop">line-height</span>: <span class="val">1.6</span>; <span style="color:#64748b">/* Міжрядковий інтервал */</span>
+  <span class="prop">color</span>: <span class="val">#334155</span>;
+  <span class="prop">text-align</span>: <span class="val">justify</span>;
+}</pre>
+            </div>
+
+            <div class="info-card">
+                <strong>Порада:</strong> Для основного тексту використовуйте <code>line-height</code> від 1.5 до 1.8. Це значно полегшує читання.
+            </div>
+        </main>
+    </div>
+</body>
+</html>

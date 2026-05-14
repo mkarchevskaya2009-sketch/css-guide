@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox | CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Магія макетів</h1>
+        <p>Як створювати гнучкі та сучасні інтерфейси</p>
+    </header>
+    <div class="layout">
+        <aside>
+            <div class="sidebar-nav">
+                <h3>Зміст</h3>
+                <ul>
+                    <li><a href="index.html">🏠 Головна сторінка</a></li>
+                    <li><a href="text.html">✍️ Текст та шрифти</a></li>
+                    <li><a href="blocks.html">📦 Блоки та межі</a></li>
+                    <li><a href="flexbox.html" class="active">🧩 Flexbox та макети</a></li>
+                    <li><a href="examples.html">🚀 Практичні кейси</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <h2>Flexbox: Швидкий старт</h2>
+            <p>Раніше верстка була складною. Flexbox змінив усе, дозволивши вирівнювати елементи в один рядок коду.</p>
+
+            <h3>Головні осі:</h3>
+            <p>У флекс-контейнера є головна вісь (горизонтальна) та поперечна (вертикальна).</p>
+
+            <div class="code-window">
+                <div class="code-header"><span>Вирівнювання</span><span>CSS</span></div>
+                <pre><span class="sel">.container</span> {
+  <span class="prop">display</span>: <span class="val">flex</span>;
+  <span class="prop">justify-content</span>: <span class="val">center</span>; <span style="color:#64748b">/* Центр по горизонталі */</span>
+  <span class="prop">align-items</span>: <span class="val">center</span>;     <span style="color:#64748b">/* Центр по вертикалі */</span>
+  <span class="prop">gap</span>: <span class="val">20px</span>;               <span style="color:#64748b">/* Відстань між елементами */</span>
+}</pre>
+            </div>
+
+            <div class="info-card">
+                <strong>Позиціювання:</strong> Крім Flexbox, використовують <code>position: absolute</code> (вільне плавання) та <code>position: fixed</code> (закріплення при скролі, як меню).
+            </div>
+        </main>
+    </div>
+</body>
+</html>

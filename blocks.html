@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Блоки та межі | CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Геометрія блоків</h1>
+        <p>Box Model — серце будь-якого макета</p>
+    </header>
+    <div class="layout">
+        <aside>
+            <div class="sidebar-nav">
+                <h3>Зміст</h3>
+                <ul>
+                    <li><a href="index.html">🏠 Головна сторінка</a></li>
+                    <li><a href="text.html">✍️ Текст та шрифти</a></li>
+                    <li><a href="blocks.html" class="active">📦 Блоки та межі</a></li>
+                    <li><a href="flexbox.html">🧩 Flexbox та макети</a></li>
+                    <li><a href="examples.html">🚀 Практичні кейси</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <h2>Блочна модель (Box Model)</h2>
+            <p>Уявіть, що кожен елемент — це посилка. У неї є вміст, м'яка обгортка всередині, картонна коробка та простір навколо неї.</p>
+
+            <h3>Складові блоку:</h3>
+            <ul>
+                <li><strong>Padding:</strong> Внутрішній відступ (простір між контентом і рамкою).</li>
+                <li><strong>Border:</strong> Рамка (межа блоку).</li>
+                <li><strong>Margin:</strong> Зовнішній відступ (відстань до інших елементів).</li>
+            </ul>
+
+            <div class="code-window">
+                <div class="code-header"><span>Box Model</span><span>CSS</span></div>
+                <pre><span class="sel">.card</span> {
+  <span class="prop">width</span>: <span class="val">300px</span>;
+  <span class="prop">padding</span>: <span class="val">20px</span>;
+  <span class="prop">border</span>: <span class="val">2px solid #primary</span>;
+  <span class="prop">margin</span>: <span class="val">10px</span>;
+  <span class="prop">border-radius</span>: <span class="val">12px</span>;
+  <span class="prop">box-sizing</span>: <span class="val">border-box</span>;
+}</pre>
+            </div>
+
+            <div class="info-card">
+                <strong>Важливо:</strong> <code>box-sizing: border-box;</code> змушує відступи включатися в загальну ширину блоку, а не роздувати його. Це полегшує верстку в 10 разів!
+            </div>
+        </main>
+    </div>
+</body>
+</html>
